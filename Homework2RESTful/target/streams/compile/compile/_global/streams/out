@@ -1,4 +1,8 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/nate/IdeaProjects/Homework2RESTful/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock ...[0m
-[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/Homework2RESTful/src/main/scala/main.java:3:1: <identifier> expected[0m
-[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/Homework2RESTful/src/main/scala/main.java:3:1: ';' expected[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/nate/IdeaProjects/Homework2RESTful/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock.[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/src/main/scala/Client.scala:20:131: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Array[String][0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m      val reply = isPresentReply(present = input.get("present").asInstanceOf[Boolean], entries = input.get("entries").asInstanceOf[Array[String]])[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock.[0m

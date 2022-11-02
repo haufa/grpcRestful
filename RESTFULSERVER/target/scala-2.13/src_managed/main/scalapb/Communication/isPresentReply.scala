@@ -8,7 +8,7 @@ package Communication
 @SerialVersionUID(0L)
 final case class isPresentReply(
     present: _root_.scala.Boolean = false,
-    entries: _root_.scala.Seq[_root_.scala.Predef.String] = _root_.scala.Seq.empty,
+    entries: _root_.scala.Predef.String = "",
     unknownFields: _root_.scalapb.UnknownFieldSet = _root_.scalapb.UnknownFieldSet.empty
     ) extends scalapb.GeneratedMessage with scalapb.lenses.Updatable[isPresentReply] {
     @transient
@@ -22,10 +22,13 @@ final case class isPresentReply(
           __size += _root_.com.google.protobuf.CodedOutputStream.computeBoolSize(1, __value)
         }
       };
-      entries.foreach { __item =>
-        val __value = __item
-        __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(2, __value)
-      }
+      
+      {
+        val __value = entries
+        if (!__value.isEmpty) {
+          __size += _root_.com.google.protobuf.CodedOutputStream.computeStringSize(2, __value)
+        }
+      };
       __size += unknownFields.serializedSize
       __size
     }
@@ -45,17 +48,16 @@ final case class isPresentReply(
           _output__.writeBool(1, __v)
         }
       };
-      entries.foreach { __v =>
-        val __m = __v
-        _output__.writeString(2, __m)
+      {
+        val __v = entries
+        if (!__v.isEmpty) {
+          _output__.writeString(2, __v)
+        }
       };
       unknownFields.writeTo(_output__)
     }
     def withPresent(__v: _root_.scala.Boolean): isPresentReply = copy(present = __v)
-    def clearEntries = copy(entries = _root_.scala.Seq.empty)
-    def addEntries(__vs: _root_.scala.Predef.String *): isPresentReply = addAllEntries(__vs)
-    def addAllEntries(__vs: Iterable[_root_.scala.Predef.String]): isPresentReply = copy(entries = entries ++ __vs)
-    def withEntries(__v: _root_.scala.Seq[_root_.scala.Predef.String]): isPresentReply = copy(entries = __v)
+    def withEntries(__v: _root_.scala.Predef.String): isPresentReply = copy(entries = __v)
     def withUnknownFields(__v: _root_.scalapb.UnknownFieldSet) = copy(unknownFields = __v)
     def discardUnknownFields = copy(unknownFields = _root_.scalapb.UnknownFieldSet.empty)
     def getFieldByNumber(__fieldNumber: _root_.scala.Int): _root_.scala.Any = {
@@ -64,14 +66,17 @@ final case class isPresentReply(
           val __t = present
           if (__t != false) __t else null
         }
-        case 2 => entries
+        case 2 => {
+          val __t = entries
+          if (__t != "") __t else null
+        }
       }
     }
     def getField(__field: _root_.scalapb.descriptors.FieldDescriptor): _root_.scalapb.descriptors.PValue = {
       _root_.scala.Predef.require(__field.containingMessage eq companion.scalaDescriptor)
       (__field.number: @_root_.scala.unchecked) match {
         case 1 => _root_.scalapb.descriptors.PBoolean(present)
-        case 2 => _root_.scalapb.descriptors.PRepeated(entries.iterator.map(_root_.scalapb.descriptors.PString(_)).toVector)
+        case 2 => _root_.scalapb.descriptors.PString(entries)
       }
     }
     def toProtoString: _root_.scala.Predef.String = _root_.scalapb.TextFormat.printToUnicodeString(this)
@@ -83,7 +88,7 @@ object isPresentReply extends scalapb.GeneratedMessageCompanion[Communication.is
   implicit def messageCompanion: scalapb.GeneratedMessageCompanion[Communication.isPresentReply] = this
   def parseFrom(`_input__`: _root_.com.google.protobuf.CodedInputStream): Communication.isPresentReply = {
     var __present: _root_.scala.Boolean = false
-    val __entries: _root_.scala.collection.immutable.VectorBuilder[_root_.scala.Predef.String] = new _root_.scala.collection.immutable.VectorBuilder[_root_.scala.Predef.String]
+    var __entries: _root_.scala.Predef.String = ""
     var `_unknownFields__`: _root_.scalapb.UnknownFieldSet.Builder = null
     var _done__ = false
     while (!_done__) {
@@ -93,7 +98,7 @@ object isPresentReply extends scalapb.GeneratedMessageCompanion[Communication.is
         case 8 =>
           __present = _input__.readBool()
         case 18 =>
-          __entries += _input__.readStringRequireUtf8()
+          __entries = _input__.readStringRequireUtf8()
         case tag =>
           if (_unknownFields__ == null) {
             _unknownFields__ = new _root_.scalapb.UnknownFieldSet.Builder()
@@ -103,7 +108,7 @@ object isPresentReply extends scalapb.GeneratedMessageCompanion[Communication.is
     }
     Communication.isPresentReply(
         present = __present,
-        entries = __entries.result(),
+        entries = __entries,
         unknownFields = if (_unknownFields__ == null) _root_.scalapb.UnknownFieldSet.empty else _unknownFields__.result()
     )
   }
@@ -112,7 +117,7 @@ object isPresentReply extends scalapb.GeneratedMessageCompanion[Communication.is
       _root_.scala.Predef.require(__fieldsMap.keys.forall(_.containingMessage eq scalaDescriptor), "FieldDescriptor does not match message type.")
       Communication.isPresentReply(
         present = __fieldsMap.get(scalaDescriptor.findFieldByNumber(1).get).map(_.as[_root_.scala.Boolean]).getOrElse(false),
-        entries = __fieldsMap.get(scalaDescriptor.findFieldByNumber(2).get).map(_.as[_root_.scala.Seq[_root_.scala.Predef.String]]).getOrElse(_root_.scala.Seq.empty)
+        entries = __fieldsMap.get(scalaDescriptor.findFieldByNumber(2).get).map(_.as[_root_.scala.Predef.String]).getOrElse("")
       )
     case _ => throw new RuntimeException("Expected PMessage")
   }
@@ -123,17 +128,17 @@ object isPresentReply extends scalapb.GeneratedMessageCompanion[Communication.is
   def enumCompanionForFieldNumber(__fieldNumber: _root_.scala.Int): _root_.scalapb.GeneratedEnumCompanion[_] = throw new MatchError(__fieldNumber)
   lazy val defaultInstance = Communication.isPresentReply(
     present = false,
-    entries = _root_.scala.Seq.empty
+    entries = ""
   )
   implicit class isPresentReplyLens[UpperPB](_l: _root_.scalapb.lenses.Lens[UpperPB, Communication.isPresentReply]) extends _root_.scalapb.lenses.ObjectLens[UpperPB, Communication.isPresentReply](_l) {
     def present: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Boolean] = field(_.present)((c_, f_) => c_.copy(present = f_))
-    def entries: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Seq[_root_.scala.Predef.String]] = field(_.entries)((c_, f_) => c_.copy(entries = f_))
+    def entries: _root_.scalapb.lenses.Lens[UpperPB, _root_.scala.Predef.String] = field(_.entries)((c_, f_) => c_.copy(entries = f_))
   }
   final val PRESENT_FIELD_NUMBER = 1
   final val ENTRIES_FIELD_NUMBER = 2
   def of(
     present: _root_.scala.Boolean,
-    entries: _root_.scala.Seq[_root_.scala.Predef.String]
+    entries: _root_.scala.Predef.String
   ): _root_.Communication.isPresentReply = _root_.Communication.isPresentReply(
     present,
     entries

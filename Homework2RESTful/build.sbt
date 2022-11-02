@@ -12,3 +12,5 @@ Compile / PB.targets := Seq(
 )
 
 libraryDependencies += "org.json" % "json" % "20220924"
+libraryDependencies += "com.google.code.gson" % "gson" % "2.10"
+libraryDependencies += "com.typesafe" % "config" % "1.4.2"

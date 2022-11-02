@@ -1,2 +1,3 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/RESTFULSERVER/src/main/protobuf/Communication.proto,/home/nate/IdeaProjects/RESTFULSERVER/target/scala-2.13/classes/Communication.proto)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/src/main/protobuf/Communication.proto,/home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/target/scala-2.13/classes/Communication.proto)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/src/main/resources/application.conf,/home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/target/scala-2.13/classes/application.conf)[0m

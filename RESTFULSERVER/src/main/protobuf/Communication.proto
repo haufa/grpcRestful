@@ -10,6 +10,6 @@ message isPresentRequest {
 
 message isPresentReply {
   bool present = 1;
-  repeated string entries = 2;
+  string entries = 2;
 }
 
