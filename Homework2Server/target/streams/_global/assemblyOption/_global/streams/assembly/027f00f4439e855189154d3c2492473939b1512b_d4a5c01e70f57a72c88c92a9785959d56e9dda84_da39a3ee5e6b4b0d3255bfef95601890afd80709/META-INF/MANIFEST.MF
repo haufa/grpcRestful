@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: grpc-stub
-Implementation-Version: 1.46.0
-

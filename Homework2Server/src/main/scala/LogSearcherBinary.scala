@@ -1,5 +1,4 @@
-import LogSearcher.injectedRegexPattern
-
+import LogSearcherBinary.injectedRegexPattern
 import java.io.File
 import java.net.URL
 import java.time.LocalTime
@@ -11,12 +10,13 @@ import scala.language.postfixOps
 import scala.sys.process._
 import scala.util.matching.Regex
 
-
+// search pattern and Time format standard
 object LogSearcherBinary {
   var i: Int = 0;
   final val injectedRegexPattern = new Regex(Configuration.generatingPattern)
   final val formatStandard = DateTimeFormatter.ofPattern("HH:mm:ss.SSS")
 
+  // copies files from s3 bucket to VM
   def fileDownloader(url: String, filename: String):Unit = {
     new URL(url) #> new File(filename) !!
   }
@@ -24,6 +24,7 @@ object LogSearcherBinary {
 
   def logSearchByTime(timeToSearch: LocalTime, interval: Int, output: ListBuffer[String]): Array[String] = {
     val fileName = "logs"+i.toString+".log"
+    // copies files to VM
     fileDownloader(Configuration.logLocation, fileName)
     val totalFile: Array[String] = Source.fromFile(fileName).getLines().toArray
     val size = totalFile.length

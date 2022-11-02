@@ -1,20 +1,25 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Client.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentReply.scala, ${BASE}/src/main/scala/main.java, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/CommunicationProto.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentRequest.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/main.java, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentRequest.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentReply.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/CommunicationProto.scala, ${BASE}/src/main/scala/Client.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Client.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentReply.scala, ${BASE}/src/main/scala/Configuration.scala, ${BASE}/src/main/scala/main.java, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/CommunicationProto.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentRequest.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Configuration.scala, ${BASE}/src/main/scala/main.java, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentRequest.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/isPresentReply.scala, ${BASE}/target/scala-2.13/src_managed/main/scalapb/Communication/CommunicationProto.scala, ${BASE}/src/main/scala/Client.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
-[0m[[0m[0mdebug[0m] [0m[0mall 5 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 6 sources are invalidated[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources and 1 Java source to /home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources and 1 Java source to /home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/target/scala-2.13/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.7.2:compile for Scala 2.13.10[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 751f3fdb for Scala compiler version 2.13.10[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 3e3eb13d for Scala compiler version 2.13.10[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/target/scala-2.13/classes:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.13/0.11.11/scalapb-runtime_2.13-0.11.11.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json/json/20220924/json-20220924.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10/gson-2.10.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.13/0.11.11/lenses_2.13-0.11.11.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.2/protobuf-java-3.19.2.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.7.0/scala-collection-compat_2.13-2.7.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/home/nate/IdeaProjects/AllHomeWork2/Homework2RESTful/target/scala-2.13/classes:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/scalapb-runtime_2.13/0.11.11/scalapb-runtime_2.13-0.11.11.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json/json/20220924/json-20220924.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.10/gson-2.10.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.4.4/logback-core-1.4.4.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.4.4/logback-classic-1.4.4.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thesamet/scalapb/lenses_2.13/0.11.11/lenses_2.13-0.11.11.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.19.2/protobuf-java-3.19.2.jar:/home/nate/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.7.0/scala-collection-compat_2.13-2.7.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.364170916 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@74cac8d2 directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.334225158 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] classfile.Parser parsing main[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.03045689 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.370681015 s[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m

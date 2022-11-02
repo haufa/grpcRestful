@@ -1,7 +1,7 @@
 import com.typesafe.config.{Config, ConfigFactory}
 
 
-
+// configuration settings
 object Configuration {
   private val config = ConfigFactory.load()
   config.getConfig("serverConfigurations")

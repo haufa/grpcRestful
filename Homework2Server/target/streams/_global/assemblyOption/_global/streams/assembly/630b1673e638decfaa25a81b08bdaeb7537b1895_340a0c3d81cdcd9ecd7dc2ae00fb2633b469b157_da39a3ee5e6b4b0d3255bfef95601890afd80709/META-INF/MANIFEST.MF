@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Automatic-Module-Name: io.perfmark
-Implementation-Version: 0.25.0
-Implementation-Title: PerfMark
-Implementation-Vendor: Carl Mastrangelo
-Implementation-URL: https://www.perfmark.io/
-Carl-Is-Awesome: true
-

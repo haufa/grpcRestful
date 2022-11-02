@@ -1,6 +1,6 @@
 import com.typesafe.config.{Config, ConfigFactory}
 
-
+// configuration based on application.conf
 object ClientConfiguration {
   private val config = ConfigFactory.load()
   config.getConfig("clientConfigurations")

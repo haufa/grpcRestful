@@ -1,8 +1,20 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/target/scala-2.13/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestfulLambda.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	RestfulLambda.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentReply$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Configuration.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentRequest$isPresentRequestLens.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	RestfulLambda.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentRequest$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentReply$isPresentReplyLens.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Configuration$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CreateLogger$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogSearcherBinary$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentReply.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	isPresentRequest.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CommunicationProto.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CommunicationProto$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogSearcherBinary.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	CreateLogger.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/nate/IdeaProjects/AllHomeWork2/RESTFULSERVER/target/scala-2.13/classes.bak[0m

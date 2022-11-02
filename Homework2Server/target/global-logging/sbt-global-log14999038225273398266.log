@@ -1,0 +1,29 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to /home/nate/IdeaProjects/AllHomeWork2/Homework2Server/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:55:38: not found: value isPresentServiceGrpc[0m
+[0m[[0m[31merror[0m] [0m[0m  class ReturnMessageService extends isPresentServiceGrpc.isPresentService {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:45:19: not found: value isPresentServiceGrpc[0m
+[0m[[0m[31merror[0m] [0m[0m      .addService(isPresentServiceGrpc.bindService(mainService, executionContext))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:56:67: not found: type isPresentReply[0m
+[0m[[0m[31merror[0m] [0m[0m    override def searchRequest(request: isPresentRequest): Future[isPresentReply] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:56:41: not found: type isPresentRequest[0m
+[0m[[0m[31merror[0m] [0m[0m    override def searchRequest(request: isPresentRequest): Future[isPresentReply] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:61:27: not found: value isPresentReply[0m
+[0m[[0m[31merror[0m] [0m[0m        Future.successful(isPresentReply(present = !logString.isEmpty, entries = logString))[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:61:42: not found: value present[0m
+[0m[[0m[31merror[0m] [0m[0m        Future.successful(isPresentReply(present = !logString.isEmpty, entries = logString))[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/nate/IdeaProjects/AllHomeWork2/Homework2Server/src/main/scala/Server.scala:61:72: not found: value entries[0m
+[0m[[0m[31merror[0m] [0m[0m        Future.successful(isPresentReply(present = !logString.isEmpty, entries = logString))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Nov 1, 2022, 9:00:05 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

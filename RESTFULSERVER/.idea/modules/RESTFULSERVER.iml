@@ -18,6 +18,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: ch.qos.logback:logback-classic:1.4.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: ch.qos.logback:logback-core:1.4.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.amazonaws:aws-java-sdk-core:1.12.328:jar" level="project" />
     <orderEntry type="library" name="sbt: com.amazonaws:aws-java-sdk-kms:1.12.328:jar" level="project" />
     <orderEntry type="library" name="sbt: com.amazonaws:aws-java-sdk-s3:1.12.328:jar" level="project" />
@@ -41,6 +43,7 @@
     <orderEntry type="library" name="sbt: org.json:json:20220924:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-collection-compat_2.13:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:2.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: software.amazon.ion:ion-java:1.0.2:jar" level="project" />
   </component>
 </module>

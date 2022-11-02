@@ -1,4 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/Homework2Server/src/main/protobuf/Communication.proto,/home/nate/IdeaProjects/Homework2Server/target/scala-2.13/classes/Communication.proto)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/Homework2Server/src/main/resources/logFile.log,/home/nate/IdeaProjects/Homework2Server/target/scala-2.13/classes/logFile.log)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/nate/IdeaProjects/Homework2Server/src/main/resources/application.conf,/home/nate/IdeaProjects/Homework2Server/target/scala-2.13/classes/application.conf)[0m

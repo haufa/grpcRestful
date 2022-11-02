@@ -17,6 +17,9 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "org.json" % "json" % "20220924"
 libraryDependencies += "com.typesafe" % "config" % "1.4.2"
+libraryDependencies += "org.slf4j" % "slf4j-api" % "2.0.3"
+libraryDependencies += "ch.qos.logback" % "logback-core" % "1.4.4"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.4.4"
 
 assembly / assemblyMergeStrategy  := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
